@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="250dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+    <ImageView
+        android:scaleType="centerCrop"
+        android:id="@+id/card_background"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#ececec"
+
+
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        />
+
+
+    <ImageView
+        android:id="@+id/gradient"
+        android:layout_width="match_parent"
+        android:layout_height="104dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/black_gradient" />
+
+    <TextView
+        android:id="@+id/card_title"
+        android:layout_width="239dp"
+        android:layout_height="30dp"
+        android:layout_marginBottom="44dp"
+        android:layout_marginStart="44dp"
+        android:text="Titlos magaziou"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/card_nb"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Odos magaziou"
+        android:textColor="@color/white"
+        android:textSize="15sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.142"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/card_title"
+        app:layout_constraintVertical_bias="0.36" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/favBtn"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginEnd="10dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/ic_baseline_favorite_red_24"
+
+        />
+</androidx.constraintlayout.widget.ConstraintLayout>

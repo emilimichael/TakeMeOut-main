@@ -1,0 +1,273 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.takemeout">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/icon"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/icon"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.TakeMeOut">
+        <activity android:name=".Categories"
+            android:label="Κατηγορίες"
+            android:parentActivityName=".WelcomePage"
+        />
+
+        <activity android:name=".XalaroPoto"
+            android:label="Χαλαρό Ποτό"
+            android:parentActivityName=".drink_categories"/>
+
+
+        <activity android:name=".drink_categories"
+            android:label="Ποτό-Κατηγορίες"
+            android:parentActivityName=".Categories"/>
+
+        <activity android:name=".food_categories"
+            android:label="Φαγητό-Κατηγορίες"
+            android:parentActivityName=".Categories"/>
+
+        <activity android:name=".User">
+
+
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name=".WelcomePage">
+        </activity>
+
+        <activity android:name=".StreetFood"
+            android:label="Street Food"
+            android:parentActivityName=".food_categories">
+
+        </activity>
+        <activity android:name=".coffee"
+            android:label="Καφές"
+            android:parentActivityName=".Categories">
+
+        </activity>
+
+        <activity android:name=".stores.food.Estrella"
+            android:label="Estrella"
+            android:parentActivityName=".StreetFood">
+
+        </activity>
+
+        <activity android:name=".stores.food.Falafel"
+            android:label="Falafel Taste Middle East"
+            android:parentActivityName=".StreetFood">
+
+        </activity>
+        <activity android:name=".stores.food.Brothers"
+            android:label="Brothers In Law"
+            android:parentActivityName=".StreetFood">
+
+        </activity>
+
+        <activity android:name=".stores.food.MpougatsaGiannis"
+            android:label="Μπουγάτσα Γιάννης"
+            android:parentActivityName=".StreetFood">
+
+        </activity>
+
+        <activity android:name=".stores.food.PizzaChris"
+            android:label="Pizza Chris"
+            android:parentActivityName=".StreetFood">
+
+        </activity>
+
+        <activity android:name=".stores.food.KritikoPerivoli"
+            android:label="Το Κρητικό Περιβόλι"
+            android:parentActivityName=".StreetFood">
+
+        </activity>
+
+        <activity android:name=".stores.food.Glikanisos"
+            android:label="Γλυκάνισος"
+            android:parentActivityName=".Taverns">
+
+        </activity>
+        <activity android:name=".Taverns"
+            android:label="Ταβέρνες"
+            android:parentActivityName=".food_categories">
+
+        </activity>
+
+        <activity android:name=".stores.food.KivotosGeusewn"
+            android:label="Κιβωτός των Γεύσεων"
+            android:parentActivityName=".Taverns">
+
+        </activity>
+
+        <activity android:name=".stores.food.NeaFolia"
+            android:label="Νέα Φωλιά"
+            android:parentActivityName=".Taverns">
+
+        </activity>
+
+        <activity android:name=".stores.food.Negroponte"
+            android:label="Negroponte"
+            android:parentActivityName=".Taverns">
+
+        </activity>
+
+        <activity android:name=".stores.food.OuzeriToNisi"
+            android:label="Ουζέρι το Νησί"
+            android:parentActivityName=".Taverns">
+
+        </activity>
+
+        <activity android:name=".stores.food.Palati"
+            android:label="Palati"
+            android:parentActivityName=".Taverns"/>
+
+        <activity android:name=".stores.food.Siviria"
+            android:label="Σιβηρία Πελμένι"
+            android:parentActivityName=".Diethnis"/>
+
+        <activity android:name=".Diethnis"
+            android:label="Διεθνής Κουζίνα"
+            android:parentActivityName=".food_categories"/>
+
+        <activity android:name=".stores.food.Esperanto"
+            android:label="Esperanto"
+            android:parentActivityName=".Diethnis"/>
+
+        <activity android:name=".stores.food.ElBurrito"
+            android:label="El Burrito"
+            android:parentActivityName=".Diethnis"/>
+
+        <activity android:name=".stores.food.Nargis"
+            android:label="Nargis Indian Restaurant"
+            android:parentActivityName=".Diethnis"/>
+
+        <activity android:name=".stores.food.Erebuni"
+            android:label="Erebuni"
+            android:parentActivityName=".Diethnis"/>
+
+        <activity android:name=".stores.food.Momo"
+            android:label="Momo Asian Bar"
+            android:parentActivityName=".Diethnis"/>
+        <activity android:name=".stores.food.Navona"
+            android:label="Navcna"
+            android:parentActivityName=".Diethnis"/>
+
+        <activity android:name=".FavoriteList"
+            android:label="Favorite Stores"
+            android:parentActivityName=".WelcomePage"/>
+
+        <!--parentActivityName paei to activity poy theloume na kanoume back me to backbutton
+            label einai o titlos pou tha exei to activity-->
+
+        <activity android:name=".stores.drinks.StoreParaty"
+            android:parentActivityName=".XalaroPoto"
+            android:label="Paraty and Loft" />
+        <activity android:name=".stores.drinks.LenasBistro"
+            android:parentActivityName=".XalaroPoto"
+            android:label="Lena's Bistro"/>
+        <activity android:name=".stores.drinks.Senor"
+            android:parentActivityName=".XalaroPoto"
+            android:label="Senor"/>
+        <activity android:name=".stores.drinks.RedRoseBar"
+            android:parentActivityName=".XalaroPoto"
+            android:label="Red Rose Bar"/>
+        <activity android:name=".stores.drinks.One"
+            android:parentActivityName=".XalaroPoto"
+            android:label="One"/>
+        <activity android:name=".stores.drinks.Local"
+            android:parentActivityName=".XalaroPoto"
+            android:label="Local"/>
+        <activity android:name=".Clubs"
+            android:label="Ποτό με δυνατή μουσική"
+            android:parentActivityName=".drink_categories"/>
+        <activity android:name=".Dance"
+            android:label="Ποτό με χορό"
+            android:parentActivityName=".drink_categories"/>
+
+        <activity android:name=".stores.drinks.Epu"
+            android:label="Epu Night Club"
+            android:parentActivityName=".Clubs"/>
+        <activity android:name=".stores.drinks.Eightball"
+            android:label="8Ball Club"
+            android:parentActivityName=".Clubs"/>
+        <activity android:name=".stores.drinks.Jadore"
+            android:label="J'adore Supreme Club"
+            android:parentActivityName=".Clubs"/>
+        <activity android:name=".stores.drinks.Casper"
+            android:label="Casper at Verykoko"
+            android:parentActivityName=".Clubs"/>
+        <activity android:name=".stores.drinks.Trap"
+            android:label="TRAP BASEMENT"
+            android:parentActivityName=".Clubs"/>
+
+        <activity android:name=".stores.drinks.Xarhakos"
+            android:label="Ξαρχάκος coffee and drinks"
+            android:parentActivityName=".Dance"/>
+        <activity android:name=".stores.drinks.LaRosaNegra"
+            android:label="La Rosa Negra Latin Club"
+            android:parentActivityName=".Dance"/>
+        <activity android:name=".stores.drinks.TangoBar"
+            android:label="Tango Bar"
+            android:parentActivityName=".Dance"/>
+        <activity android:name=".stores.drinks.Habanita"
+            android:label="Habanita Latin Bar"
+            android:parentActivityName=".Dance"/>
+
+        <activity android:name=".stores.coffee.DomatioThea"
+            android:label="Δωμάτιο με Θέα"
+            android:parentActivityName=".coffee"/>
+        <activity android:name=".stores.coffee.ToTsai"
+            android:label="Το Τσάι"
+            android:parentActivityName=".coffee"/>
+        <activity android:name=".stores.coffee.ProtoPatoma"
+            android:label="Πρώτο Πάτωμα"
+            android:parentActivityName=".coffee"/>
+        <activity android:name=".stores.coffee.KitrinoPodilato"
+            android:label="Κίτρινο Ποδήλατο"
+            android:parentActivityName=".coffee"/>
+        <activity android:name=".stores.coffee.LeJardin"
+            android:label="Le Jardin Extraordinaire Café"
+            android:parentActivityName=".coffee"/>
+        <activity android:name=".stores.coffee.Urban"
+            android:label="Urban Cafe"
+            android:parentActivityName=".coffee"/>
+        <activity android:name=".stores.coffee.Enoxes"
+            android:label="Ενοχές"
+            android:parentActivityName=".coffee"/>
+        <activity android:name=".stores.coffee.Efimerida"
+            android:label="Εφημερίδα"
+            android:parentActivityName=".coffee"/>
+        <activity android:name=".stores.coffee.Υpsilon"
+            android:label="Ypsilon"
+            android:parentActivityName=".coffee"/>
+        <activity android:name=".stores.coffee.Boulevard"
+            android:label="Boulevard 23"
+            android:parentActivityName=".coffee"/>
+        <activity android:name=".stores.coffee.Madison"
+            android:label="Madison"
+            android:parentActivityName=".coffee"/>
+        <activity android:name=".stores.coffee.Diorofon"
+            android:label="Διώροφον"
+            android:parentActivityName=".coffee"/>
+        <activity android:name=".stores.coffee.Diatiriteo"
+            android:label="Το Διατηρητέο"
+            android:parentActivityName=".coffee"/>
+        <activity android:name=".stores.coffee.Castra"
+            android:label="Castra All Day Terrace Bar"
+            android:parentActivityName=".coffee"/>
+        <activity android:name=".stores.coffee.Shark"
+            android:label="Shark"
+            android:parentActivityName=".coffee"/>
+        <activity android:name=".stores.coffee.Arxegono"
+            android:label="Αρχέγονο"
+            android:parentActivityName=".coffee"/>
+
+
+
+    </application>
+
+</manifest>

@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".food_categories">
+
+
+
+
+    <LinearLayout
+        android:id="@+id/linearLayout3"
+        android:layout_width="594dp"
+        android:layout_height="142dp"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toTopOf="@+id/relativeLayout3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+
+        <RelativeLayout
+            android:id="@+id/relativeLayout2"
+            android:layout_width="300dp"
+            android:layout_height="match_parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/relativeLayout4"
+            app:layout_constraintHorizontal_bias="0.71"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.16000003">
+
+            <RelativeLayout
+                android:id="@+id/street_food"
+                android:layout_width="300dp"
+                android:layout_height="140dp"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/street_food"
+                android:clickable="true"
+                android:focusable="true"
+                android:onClick="StreetFood">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginBottom="25dp"
+                    android:padding="25dp"
+                    android:text="@string/street_food"
+                    android:textAlignment="center"
+                    android:textColor="@color/white"
+                    android:textSize="40sp" />
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/relativeLayout4"
+            android:layout_width="300dp"
+            android:layout_height="140dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.86"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.16000003">
+
+            <RelativeLayout
+                android:id="@+id/taverns"
+                android:layout_width="match_parent"
+                android:layout_height="140dp"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/taverns"
+                android:clickable="true"
+                android:focusable="true"
+                android:onClick="Taverns">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    android:layout_marginEnd="32dp"
+                    android:padding="30dp"
+                    android:text="@string/taverns"
+                    android:textColor="@color/white"
+                    android:textSize="40sp" />
+            </RelativeLayout>
+
+
+        </RelativeLayout>
+
+    </LinearLayout>
+    <RelativeLayout
+        android:id="@+id/relativeLayout3"
+        android:layout_width="300dp"
+        android:layout_height="140dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.50"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.97">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/global_food"
+            android:clickable="true"
+            android:focusable="true"
+            android:onClick="Diethnis">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:layout_marginEnd="32dp"
+                android:padding="30dp"
+                android:text="Διεθνής "
+                android:textColor="@color/white"
+                android:textSize="40sp" />
+        </RelativeLayout>
+
+
+    </RelativeLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

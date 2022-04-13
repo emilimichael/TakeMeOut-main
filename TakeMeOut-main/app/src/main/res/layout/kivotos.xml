@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".stores.food.KivotosGeusewn">
+
+    <ImageView
+        android:id="@+id/background1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:adjustViewBounds="true"
+        android:scaleType="centerCrop"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@mipmap/drinksback"
+        tools:ignore="ContentDescription" />
+
+
+    <ScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+
+            <ImageView
+                android:id="@+id/image"
+                android:layout_width="match_parent"
+                android:layout_height="301dp"
+                android:layout_marginBottom="1dp"
+                android:gravity="center"
+                android:scaleType="centerCrop"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:srcCompat="@drawable/kivotos"
+                android:contentDescription="@string/picture_of_store_s_burgers" />
+
+
+            <TextView
+                android:id="@+id/image_desc"
+                style="bold"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="14dp"
+                android:layout_marginTop="20dp"
+                android:text="Κιβωτός των Γεύσεων "
+                android:textColor="@android:color/black"
+                android:textSize="30sp" />
+
+            <TextView
+
+                android:id="@+id/address"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="14dp"
+                android:text="Πατριάρχου Ιωακείμ 26"
+                android:textSize="20sp" />
+
+            <TextView
+
+                android:id="@+id/phone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="14dp"
+                android:layout_marginTop="10dp"
+                android:text="231 021 1711"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/desc"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="14dp"
+                android:text="Η Κιβωτός των Γεύσεων στη Ροτόντα, φιλοξενεί τις πιο φιλικές παρέες με κρασί, ουζάκι, εκλεκτούς μεζέδες και ζωντανή μουσική ορισμένες μέρες. Έχει κερδίσει μεγαλύτερο εύρος του κοινού της πόλης χάρη στα προσεγμένα της πιάτα, τη μεγάλη ποικιλία επιλογών σε σαλάτες, ορεκτικά, κρεατικά της ώρας, αλλά και θαλλασινά.
+Κάθε Παρασκευή και Σάββατο διοργανώνονται special βραδιές με ζωντανή λαϊκή μουσική που φέρνουν πιο κοντά τις παρέες και ανάβει το κέφι. Έυρος τιμών: 8 € - 15 €.
+"
+                android:textSize="20sp" />
+
+            <Button
+                android:id="@+id/button4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="20dp"
+                android:backgroundTint="@android:color/holo_green_dark"
+                android:onClick="openMap"
+                android:text="Δες το στον χάρτη >" />
+
+
+        </LinearLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
